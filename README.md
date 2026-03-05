@@ -34,3 +34,11 @@ php artisan serve
 6. Abrir el navegador y acceder al sistema
 
 http://localhost:8000/vehicles
+
+## Vista Web
+
+![Modelo de Base de Datos](fotos/parte1.png)
+
+![Modelo de Base de Datos](fotos/parte2.png)
+
+![Modelo de Base de Datos](fotos/parte3.png)
