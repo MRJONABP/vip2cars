@@ -58,7 +58,7 @@ php -m
 
 1. Clonar el repositorio
 
-git clone https://github.com/usuario/vip2cars.git
+git clone https://github.com/MRJONABP/vip2cars
 
 
 2. Entrar al proyecto
