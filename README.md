@@ -1,57 +1,36 @@
-## Modelado de Base de Datos – Sistema de Encuestas Anónimas
+## Pregunta 1: Modelo de Base de Datos
 
-Se propone la siguiente estructura:
+El modelo de base de datos del sistema de encuestas anónimas se encuentra representado en el siguiente diagrama.
 
-### surveys
-- id
-- title
-- description
-- created_at
+Las imágenes del modelo se encuentran dentro de la carpeta **fotos** del repositorio.
 
-### questions
-- id
-- survey_id
-- question
-
-### options
-- id
-- question_id
-- option_text
-
-### responses
-- id
-- question_id
-- option_id
-- created_at
-
-Relaciones:
-- Un survey tiene muchas questions
-- Una question tiene muchas options
-- Las responses registran la opción seleccionada
-
-El sistema es anónimo porque no se almacena información del usuario que responde.
+![Modelo de Base de Datos](fotos/esquema.jpeg)
 
 
+## Pregunta 2: Instalación y ejecución del proyecto
 
+Para ejecutar el sistema en un entorno local siga los siguientes pasos:
 
-## Instalación
+1. Clonar el repositorio desde GitHub
 
-1. Clonar repositorio
+git clone https://github.com/MRJONABP/vip2cars.git
 
-git clone https://github.com/usuario/vip2cars
-
-2. Entrar al proyecto
+2. Ingresar a la carpeta del proyecto
 
 cd vip2cars
 
-3. Instalar dependencias
+3. Instalar las dependencias del proyecto
 
 composer install
 
-4. Ejecutar migraciones
+4. Ejecutar las migraciones de la base de datos
 
 php artisan migrate
 
-5. Iniciar servidor
+5. Iniciar el servidor de desarrollo
 
 php artisan serve
+
+6. Abrir el navegador y acceder al sistema
+
+http://localhost:8000/vehicles
